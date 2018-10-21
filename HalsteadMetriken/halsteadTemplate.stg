@@ -1,0 +1,42 @@
+operand(operanden) ::=<<
+    Anzahl aller Operanden:
+
+    <operanden: {op | <op.amount><\t><op.operand><\n>}>
+
+    ---------------------------------------------------
+
+    >>
+
+operator(operators) ::=<<
+    Anzahl aller Operatoren:
+
+    <operators: {op | <op.amount><\t><op.operators><\n>}>
+
+    ---------------------------------------------------
+
+    >>
+
+parameter(amountOperators, amountOperands, amountDiffOperators, amountDiffOperands) ::=<<
+    Halstead-Parameter:
+
+    N1:<\t><amountOperators><\n>
+    N2:<\t><amountOperands><\n>
+    n1:<\t><amountDiffOperators><\n>
+    n2:<\t><amountDiffOperands><\n>
+
+    ---------------------------------------------------
+
+    >>
+
+metriken(programLength, vocSize, volume, difficulty, effort) ::=<<
+    Halstead-Metriken:
+
+    N:<\t><programLength><\n>
+    n:<\t><vocSize><\n>
+    Volume V:<\t><volume><\n>
+    Difficulty D:<\t><difficulty><\n>
+    Effort E:<\t><effort><\n>
+
+    ---------------------------------------------------
+
+    >>
